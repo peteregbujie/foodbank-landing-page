@@ -20,14 +20,15 @@ const Navbar = () => {
       <a href='#menu'>Programs</a>
      </li>
     </ul>
-    <ul className='navbar-nav-right'>
-     <li>
-      <button className='btn btn-dark-outline'>Volunteer</button>
-     </li>
-     <li>
-      <button className='btn btn-dark'>Donate</button>
-     </li>
-    </ul>
+    <div className='app__navbar-right'>
+     <a href='#login' className='p__opensans'>
+      VOLUNTEER
+     </a>
+     <div />
+     <a href='/' className='p__opensans'>
+      <button className='btn'>DONATE</button>
+     </a>
+    </div>
 
     <div className='app__navbar-smallscreen'>
      <FaBars color='#fff' fontSize={27} onClick={() => setToggleMenu(true)} />
@@ -55,11 +56,6 @@ const Navbar = () => {
          </a>
         </li>
        </ul>
-
-       <div class='mobile-menu-bottom'>
-        <button className='btn btn-dark-outline'>Volunteer</button>
-        <button className='btn btn-dark'>Donate</button>
-       </div>
       </div>
      )}
     </div>

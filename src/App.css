@@ -1,7 +1,7 @@
 :root {
  --background: #faeee7;
  --headline: #33272a;
- --paragraph: #594a4e;
+ --text: #000000;
  --button: #e30b5c;
  --otherbutton: #001858;
  --button-text: #33272a;
@@ -26,7 +26,7 @@
 }
 
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;500;700&family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 /* Remove default margin */
 body,
@@ -43,10 +43,10 @@ dd {
 }
 
 body {
- background: var(--highlight);
- font-family: 'Open Sans', sans-serif;
+ background: var(--background);
+ font-family: 'Montserrat', sans-serif;
  line-height: 1.75;
- color: var(--paragraph);
+ color: var(--text);
 }
 
 p {
@@ -67,7 +67,7 @@ h2 {
 }
 
 h3 {
- color: #2e3c40;
+ color: var(--text);
  font-size: 3.5em;
  font-weight: 600;
  line-height: 1.5;
@@ -398,6 +398,29 @@ span {
   padding: 20px 0;
   margin: 0 auto;
   line-height: 1.7rem;
+ }
+
+ .app__navbar-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+ }
+
+ .app__navbar-right a {
+  margin: 0 1rem;
+  text-decoration: none;
+  transition: 0.5s ease;
+  font-weight: bold;
+ }
+
+ .app__navbar-right a:hover {
+  border-bottom: 1px solid var(--color-golden);
+ }
+
+ .app__navbar-right div {
+  width: 1px;
+  height: 30px;
+  background: var(--color-grey);
  }
 }
 

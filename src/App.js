@@ -25,32 +25,32 @@ function App() {
        <h3>20,000</h3>
        <h4>Number of Meals Served</h4>
        <p>We have served over 20,000 meals.</p>
-       <span className='link-text'>
-        Donate
-        <IoArrowForwardSharp className='icon' />
+       <span>
+        Donate&nbsp;
+        <IoArrowForwardSharp />
        </span>
       </section>
       <section id='card2' className='card'>
        <h3>3,000</h3>
        <h4>Number of People Fed</h4>
        <p>We have fed over 3000 people.</p>
-       <span className='link-text'>
-        Donate
-        <IoArrowForwardSharp className='icon' />
+       <span>
+        Learn More&nbsp;
+        <IoArrowForwardSharp />
        </span>
       </section>
       <section id='card3' className='card'>
        <h3>300</h3>
-       <h4>Number of our Volunteers</h4>
+       <h4>Number of Volunteers</h4>
        <p>Over 300 people have voluntered.</p>
-       <span className='link-text'>
-        Volunteer
-        <IoArrowForwardSharp className='icon' />
+       <span>
+        Volunteer&nbsp;
+        <IoArrowForwardSharp />
        </span>
       </section>
 
       <section id='more1' className='more'>
-       <div className='hero__img'>
+       <div className='more__img'>
         <img src={cook} alt='cook' />
        </div>
        <div className='more-text'>
@@ -67,14 +67,15 @@ function App() {
        </div>
       </section>
       <section id='more2' className='more more-reversed'>
-       <div className='hero__img'>
+       <div className='more__img'>
         <img src={smile} alt='smile' />
        </div>
        <div className='more-text'>
         <h3>Our Impact</h3>
         <p>
-         <b>Your partnership makes all the difference.</b> Together we can alleviate
-         hunger in our city by provoding healthy to every person everyday.
+         <b>Your partnership makes all the difference.</b> Together we can
+         alleviate hunger in our city by provoding healthy to every person
+         everyday.
         </p>
        </div>
       </section>

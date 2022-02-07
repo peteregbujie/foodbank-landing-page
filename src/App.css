@@ -2,16 +2,12 @@
  --background: #faeee7;
  --headline: #33272a;
  --text: #e30b5c;
- --stroke: #33272a;
  --main: #fffffe;
  --highlight: #ff8ba7;
  --secondary: #ffc6c7;
- --tertiary: #c3f0ca;
  --background2: #e30b5c;
 
  /*other vars */
- --borderRadius: 0.25rem;
- --letterSpacing: 1px;
  --transition: 0.3s ease-in-out all;
  --max-width: 1120px;
 }
@@ -100,6 +96,17 @@ img {
  object-fit: cover;
 }
 
+span {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-weight: 600;
+ color: var(--text);
+ margin-top: 2rem;
+ transition: var(--transition);
+}
+
+/* Grid Styles */
 .container {
  display: grid;
  grid-auto-columns: 1fr;
@@ -116,13 +123,13 @@ img {
 
 nav {
  grid-area: nav;
- grid-column: 1/4;
+ grid-column: 1/2;
  grid-row: 1/2;
 }
 
 #hero {
  grid-area: hero;
- grid-column: 1/4;
+ grid-column: 1/2;
  grid-row: 2/3;
  margin-bottom: 4rem;
 }
@@ -137,83 +144,83 @@ nav {
 
 #card2 {
  grid-area: card2;
- grid-column: 2/3;
- grid-row: 3/4;
+ grid-column: 1/2;
+ grid-row: 4/5;
  margin: 4rem 2rem;
 }
 #card3 {
  grid-area: card3;
- grid-column: 3/4;
- grid-row: 3/4;
+ grid-column: 1/2;
+ grid-row: 5/6;
  margin: 4rem 2rem;
 }
 
 #more1 {
  grid-area: more1;
- grid-column: 1/4;
- grid-row: 4/5;
+ grid-column: 1/2;
+ grid-row: 6/7;
  margin-top: 4rem;
  background: var(--main);
 }
 
 #more2 {
  grid-area: more2;
- grid-column: 1/4;
- grid-row: 5/6;
+ grid-column: 1/2;
+ grid-row: 7/8;
 }
 
 footer {
  grid-area: footer;
- grid-column: 1/4;
- grid-row: 6/7;
+ grid-column: 1/2;
+ grid-row: 8/9;
  margin: 2rem 0;
 }
 
+/* hero section */
 .hero {
- height: 500px;
+ height: 300px;
  position: relative;
  padding: 20px;
- box-sizing: border-box;
  display: flex;
- align-items: flex-end;
- text-decoration: none;
+ align-items: center;
  border: 4px solid #b0215e;
+ overflow: hidden;
  background-image: url('../src/assets/happy.jpeg');
- background-size: cover;
+ background-size: 100% 100%;
 }
 
 .hero .inner {
- height: 80%;
- width: 30%;
+ position: absolute;
+ top: 60%;
+ width: 90%;
  display: flex;
  flex-direction: column;
  justify-content: center;
  align-items: center;
- background: white;
- box-sizing: border-box;
- padding: 1.7rem;
+ padding: 1.5rem;
  margin-bottom: 2rem;
  margin-left: 2rem;
 }
 
-.hero .title {
- font-size: 24px;
- color: var(--headline);
- text-align: center;
- font-weight: 700;
- text-shadow: 0px 2px 2px #a6f8d5;
- position: relative;
- margin: 0 0 20px 0;
+.hero p {
+ display: flex;
+ color: var(--main);
+ text-align: left;
+ font-weight: bold;
+ font-size: 1rem;
+ position: absolute;
 }
 
-span {
+.hero span {
+ position: absolute;
  display: flex;
  justify-content: center;
  align-items: center;
  font-weight: 600;
- color: var(--text);
+ color: var(--main);
  margin-top: 2rem;
- transition: all 300ms ease-in-out;
+ transition: var(--transition);
+ top: 80%;
 }
 
 span:hover {
@@ -290,15 +297,6 @@ span:hover {
  }
 }
 
-.more-reversed :first-child {
- order: 2;
-}
-.background {
- background: var(--highlight);
- margin: 2rem;
- width: 100%;
-}
-
 .more {
  display: flex;
  flex-direction: column;
@@ -331,11 +329,17 @@ span:hover {
  line-height: 1.7rem;
 }
 
+.more-reversed :first-child {
+ order: 2;
+}
+
 .footer {
  margin-top: 3rem;
  text-align: center;
  font-size: 1rem;
 }
+
+/* Media Queries */
 
 @media (min-width: 768px) {
  .container {
@@ -349,15 +353,114 @@ span:hover {
    'footer';
  }
 
+ nav {
+  grid-area: nav;
+  grid-column: 1/4;
+  grid-row: 1/2;
+ }
+
+ #hero {
+  grid-area: hero;
+  grid-column: 1/4;
+  grid-row: 2/3;
+  margin-bottom: 4rem;
+ }
+
+ #card1 {
+  grid-area: card1;
+  grid-column: 1/2;
+  grid-row: 3/4;
+  margin: 4rem 2rem;
+  margin-left: 4rem;
+ }
+
+ #card2 {
+  grid-area: card2;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  margin: 4rem 2rem;
+ }
+ #card3 {
+  grid-area: card3;
+  grid-column: 3/4;
+  grid-row: 3/4;
+  margin: 4rem 2rem;
+ }
+
+ #more1 {
+  grid-area: more1;
+  grid-column: 1/4;
+  grid-row: 4/5;
+  margin-top: 4rem;
+  background: var(--main);
+ }
+
+ #more2 {
+  grid-area: more2;
+  grid-column: 1/4;
+  grid-row: 5/6;
+ }
+
+ footer {
+  grid-area: footer;
+  grid-column: 1/4;
+  grid-row: 6/7;
+  margin: 2rem 0;
+ }
+
  .hero {
   height: 500px;
+  position: relative;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-end;
+  text-decoration: none;
+  border: 4px solid #b0215e;
+  background-size: cover;
  }
- .inner {
-  width: 50%;
-  height: 100%;
+
+ .hero .inner {
+  position: absolute;
+  height: 60%;
+  top: 30%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  box-sizing: border-box;
+  padding: 1.7rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
  }
- .title {
-  font-size: 30px;
+
+ .hero p {
+  font-size: 24px;
+  color: var(--headline);
+  text-align: center;
+  font-weight: 700;
+  text-shadow: 0px 2px 2px #a6f8d5;
+  position: relative;
+  margin-bottom: -1rem;
+ }
+
+ .hero span {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  color: var(--background2);
+  margin-top: 2rem;
+  transition: var(--transition);
+  top: 80%;
+  margin: 1rem 0;
+ }
+
+ span:hover {
+  font-size: 1.4rem;
  }
 
  .more {
@@ -367,6 +470,7 @@ span:hover {
   justify-content: center;
   align-items: center;
  }
+
  more-text {
   display: flex;
   justify-content: flex-start;
@@ -378,6 +482,7 @@ span:hover {
   line-height: 1.7rem;
  }
 
+ /* Navbar */
  .app__navbar-right {
   display: flex;
   justify-content: flex-end;

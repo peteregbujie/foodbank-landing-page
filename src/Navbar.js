@@ -1,13 +1,14 @@
 import React from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import logo from './assets/logo.png';
 import './Navbar.css';
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = React.useState(false);
   return (
    <nav className='app__navbar'>
-    <div className='app__navbar-logo'>
-     <title>FoodBank</title>
+          <div className='app__navbar-logo'>
+              <img src={logo} alt='logo' />
     </div>
     <ul className='app__navbar-links'>
      <li className='p__opensans'>

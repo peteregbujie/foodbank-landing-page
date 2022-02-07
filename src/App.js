@@ -9,13 +9,13 @@ function App() {
     return (
      <div className='container'>
       <Navbar />
-      <section id='hero' className='hero'>
+        <section id='hero' className='hero'>
        <div className='inner'>
-        <p className='title'>
+        <p>
          Together, we can make the world a better place, one plate at a time
         </p>
         <span>
-         Donate&nbsp;
+         Donate&nbsp;            
          <IoArrowForwardSharp />
         </span>
        </div>

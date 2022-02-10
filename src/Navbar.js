@@ -7,8 +7,8 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = React.useState(false);
   return (
    <nav className='app__navbar'>
-          <div className='app__navbar-logo'>
-              <img src={logo} alt='logo' />
+    <div className='app__navbar-logo'>
+     <img src={logo} alt='logo' />
     </div>
     <ul className='app__navbar-links'>
      <li className='p__opensans'>
@@ -22,13 +22,8 @@ const Navbar = () => {
      </li>
     </ul>
     <div className='app__navbar-right'>
-     <a href='#login' className='p__opensans'>
-      VOLUNTEER
-     </a>
-     <div />
-     <a href='/' className='p__opensans'>
-      <button className='btn'>DONATE</button>
-     </a>
+     <button className='btn btn-dark-outline'>Volunteer</button>
+     <button className='btn btn-dark'>Donate</button>
     </div>
 
     <div className='app__navbar-smallscreen'>

@@ -9,13 +9,13 @@ function App() {
     return (
      <div className='container'>
       <Navbar />
-        <section id='hero' className='hero'>
+      <section id='hero' className='hero'>
        <div className='inner'>
         <p>
          Together, we can make the world a better place, one plate at a time
         </p>
         <span>
-         Donate&nbsp;            
+         Donate&nbsp;
          <IoArrowForwardSharp />
         </span>
        </div>
@@ -25,28 +25,28 @@ function App() {
        <h3>20,000</h3>
        <h4>Number of Meals Served</h4>
        <p>We have served over 20,000 meals.</p>
-       <span>
+       <div className='link-text'>
         Donate&nbsp;
         <IoArrowForwardSharp />
-       </span>
+       </div>
       </section>
       <section id='card2' className='card'>
        <h3>3,000</h3>
        <h4>Number of People Fed</h4>
        <p>We have fed over 3000 people.</p>
-       <span>
+       <div className='link-text'>
         Learn More&nbsp;
         <IoArrowForwardSharp />
-       </span>
+       </div>
       </section>
       <section id='card3' className='card'>
        <h3>300</h3>
        <h4>Number of Volunteers</h4>
        <p>Over 300 people have voluntered.</p>
-       <span>
+       <div className='link-text'>
         Volunteer&nbsp;
         <IoArrowForwardSharp />
-       </span>
+       </div>
       </section>
 
       <section id='more1' className='more'>

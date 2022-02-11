@@ -122,6 +122,10 @@ span {
   'more1'
   'more2'
   'footer';
+ max-width: 1200px;
+ padding: 0 15px;
+ margin-left: auto;
+ margin-right: auto;
 }
 
 nav {
@@ -240,9 +244,12 @@ span:hover {
  text-decoration: none;
  background: white;
  margin: 1em;
- padding: 1rem 1rem;
  box-shadow: 0 1.5em 2.5em -0.5em rgba(#000000, 0.1);
  transition: transform 0.45s ease;
+}
+
+.card__wrapper {
+ padding: 1.5rem 1rem;
 }
 
 .card h3 {
@@ -261,7 +268,7 @@ span:hover {
  opacity: 0;
  color: #ffffff;
  font-weight: 400;
- line-height: 1.8;
+ line-height: 1.5;
  margin: 0 0 0.5em;
  transform: translateY(-1em);
  transition: opacity 0.45s ease, transform 0.5s ease;
@@ -486,31 +493,6 @@ span:hover {
   padding: 20px 0;
   margin: 0 auto;
   line-height: 1.7rem;
- }
-
- /* Navbar */
- .app__navbar-right {
-  display: flex;
-  justify-content: space-between;
-  align-items: left;
-  flex-direction: row;
- }
-
- .app__navbar-right a {
-  margin: 0 1rem;
-  text-decoration: none;
-  transition: 0.5s ease;
-  font-weight: bold;
- }
-
- .app__navbar-right a:hover {
-  border-bottom: 1px solid var(--main);
- }
-
- .app__navbar-right div {
-  width: 1px;
-  height: 30px;
-  background: var(--background2);
  }
 }
 

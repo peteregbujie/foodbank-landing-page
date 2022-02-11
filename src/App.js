@@ -22,30 +22,36 @@ function App() {
       </section>
 
       <section id='card1' className='card'>
-       <h3>20,000</h3>
-       <h4>Number of Meals Served</h4>
-       <p>We have served over 20,000 meals.</p>
-       <div className='link-text'>
-        Donate&nbsp;
-        <IoArrowForwardSharp />
+       <div className='card__wrapper'>
+        <h3>20,000</h3>
+        <h4>Number of Meals Served</h4>
+        <p>We have served over 20,000 meals.</p>
+        <div className='link-text'>
+         Donate&nbsp;
+         <IoArrowForwardSharp />
+        </div>
        </div>
       </section>
       <section id='card2' className='card'>
-       <h3>3,000</h3>
-       <h4>Number of People Fed</h4>
-       <p>We have fed over 3000 people.</p>
-       <div className='link-text'>
-        Learn More&nbsp;
-        <IoArrowForwardSharp />
+       <div className='card__wrapper'>
+        <h3>3,000</h3>
+        <h4>Number of People Fed</h4>
+        <p>We have fed over 3000 people.</p>
+        <div className='link-text'>
+         Learn More&nbsp;
+         <IoArrowForwardSharp />
+        </div>
        </div>
       </section>
       <section id='card3' className='card'>
-       <h3>300</h3>
-       <h4>Number of Volunteers</h4>
-       <p>Over 300 people have voluntered.</p>
-       <div className='link-text'>
-        Volunteer&nbsp;
-        <IoArrowForwardSharp />
+       <div className='card__wrapper'>
+        <h3>300</h3>
+        <h4>Number of Volunteers</h4>
+        <p>Over 300 people have voluntered.</p>
+        <div className='link-text'>
+         Volunteer&nbsp;
+         <IoArrowForwardSharp />
+        </div>
        </div>
       </section>
 
